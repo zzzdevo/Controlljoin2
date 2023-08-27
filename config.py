@@ -5,9 +5,9 @@ db = asJSON("as.json")
 ###
 
 
-SUDORS = [5541009328] # ايديات المطورين
-API_ID = 9028013
-API_HASH = "cc894fc40424f9c8bbcf06b7355bd69d"
-TOKEN = "" # التوكن
+SUDORS = [833360381] # ايديات المطورين
+API_ID = 12962251
+API_HASH = "b51499523800add51e4530c6f552dbc8"
+TOKEN = "6370078303:AAEK7Q0XNR-jHG3ntVrYpf7lClBDV_hQzw0" # التوكن
 bot = Client("control",API_ID,API_HASH,bot_token=TOKEN,in_memory=True)
 bot_id = TOKEN.split(":")[0]

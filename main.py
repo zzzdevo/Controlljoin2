@@ -47,11 +47,9 @@ async def new_user(bot, msg):
 	if not is_user(msg.from_user.id):
 		add_new_user(msg.from_user.id)
 		text = f"""
-• دخل عضو جديد للبوت
-
-• الاسم : {msg.from_user.first_name}
-• منشن : {msg.from_user.mention}
-• الايدي : {msg.from_user.id}
+**• کەسێکی نێ هاتە ناو بۆت🍒**
+**• ناو : {msg.from_user.mention}**
+**• ئایدی : {msg.from_user.id}**
 		"""
 		reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(f"• عدد الاعضاء: {len(get_users())}", callback_data= "users")]])
 		if len(SUDORS) > 0:

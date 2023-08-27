@@ -51,7 +51,7 @@ async def new_user(bot, msg):
 **• ناو : {msg.from_user.mention}**
 **• ئایدی : {msg.from_user.id}**
 		"""
-		reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(f"• عدد الاعضاء: {len(get_users())}", callback_data= "users")]])
+		reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(f"• ژمارەی ئەندام : {len(get_users())}", callback_data= "users")]])
 		if len(SUDORS) > 0:
 			for user_id in SUDORS:
 				await bot.send_message(int(user_id), text, reply_markup=reply_markup)
